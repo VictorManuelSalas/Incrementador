@@ -1,23 +1,36 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: block;
     padding-top: 6%;
     font-family: 'Roboto', sans-serif;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+section {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 4%;
+    border-radius: 2rem;
+    box-shadow: -11px 0px 86px 0px rgba(85, 152, 255, 0.75);
+    -webkit-box-shadow: -11px 0px 86px 0px rgba(85, 152, 255, 0.75);
+    -moz-box-shadow: -11px 0px 86px 0px rgba(85, 152, 255, 0.75);
+}
 
-.page{
-    height: fit-content; 
-    display: flex;          
+.page {
+    height: fit-content;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.fondo_transparente{
+
+.fondo_transparente {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.226);
@@ -27,8 +40,8 @@ body{
     display: none;
 }
 
-.modal{
-    background: linear-gradient(0deg,white 70%, rgb(20, 60, 220) 30%);
+.modal {
+    background: linear-gradient(0deg, white 70%, rgb(20, 60, 220) 30%);
     width: 50%;
     height: 300px;
     top: 50%;
@@ -43,7 +56,7 @@ body{
 
 }
 
-.modal_cerrar{
+.modal_cerrar {
     background: white;
     position: absolute;
     right: -20px;
@@ -57,103 +70,119 @@ body{
     align-items: center;
     cursor: pointer;
 }
-#modal-form{
+
+#modal-form {
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#modal-form input{
+
+#modal-form input {
     width: 25%;
     padding-left: 11%;
     height: 2.5rem;
     border-radius: 2rem;
-   background-color: rgb(199, 231, 255);
+    background-color: rgb(199, 231, 255);
 }
-.modal_titulo{
+
+.modal_titulo {
     color: white;
     font-size: 1.5rem;
 }
-.modal_mensaje{          
-   padding: 20px 30px;
-   background-color: white;
-}
-.modal_botones{      
-    width: 100%;    
-   border-top:whitesmoke 1px;
-   padding-top: 20px;
-   display: flex;
-   justify-content: space-evenly;
+
+.modal_mensaje {
+    padding: 20px 30px;
+    background-color: white;
 }
 
-.boton{
+.modal_botones {
+    width: 100%;
+    border-top: whitesmoke 1px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boton {
     background: white;
     padding: 8px 30px;
     color: rgb(20, 27, 220);
     text-decoration: none;
     border-radius: 25px;
-    border:1px solid rgb(30, 20, 220)
+    border: 1px solid rgb(30, 20, 220)
 }
-.boton:hover{
+
+.boton:hover {
     background: rgb(20, 60, 220);
     color: white;
 }
-    
+
 /*----------------------------------------------------------*/
-h1{
+section h1 {
     text-align: center;
+    font-size: 2rem;
 }
-#mostrador{
+
+#mostrador {
     width: 150px;
     height: 150px;
     border-radius: 5rem;
     margin: auto;
-    background-color: rgba(111, 217, 255, 0.678);
-    border: 2px solid rgb(0, 136, 255);
+    background-color: rgba(85, 152, 255, 0.75);
+    border: 2px solid rgb(28, 187, 255);
     display: flex;
     align-items: center;
 }
-#mostrador label input{
+
+#mostrador label input {
     border: none;
+    border-radius: 3rem;
+    padding-left: 10%;
     background-color: transparent;
     width: 150px;
     text-align: center;
     height: fit-content;
     font-size: 2rem;
 }
-#botones{
+
+#botones {
     margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#botones input{
+
+#botones input {
     margin: 0.5rem;
     border: none;
     cursor: pointer;
     border-radius: 1.5rem;
-   width: 100px;
-   height: 50px;
-   font-size: 2rem;
+    width: 100px;
+    height: 50px;
+    font-size: 2rem;
 }
-#botones input:hover{
+
+#botones input:hover {
     background-color: rgb(74, 116, 255);
     color: white;
 }
 
-@media only screen and (max-width: 600px)  {
-    .modal{
+@media only screen and (max-width: 600px) {
+    .modal {
         width: 80%;
     }
-    h1{
+
+    section h1 {
         font-size: 1.5rem;
     }
-    #modal-form input{
+
+    #modal-form input {
         width: 50%;
         padding-left: 20%;
         height: 2.5rem;
         border-radius: 2rem;
-       background-color: rgb(199, 231, 255);
+        background-color: rgb(199, 231, 255);
     }
 }
