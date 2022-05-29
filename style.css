@@ -12,8 +12,7 @@ body{
 
 
 .page{
-    background: url(img/foto.jpg) center;
-    height: 100vh; 
+    height: fit-content; 
     display: flex;          
     justify-content: center;
     align-items: center;
@@ -27,9 +26,10 @@ body{
     width: 100%;
     display: none;
 }
+
 .modal{
     background: linear-gradient(0deg,white 70%, rgb(20, 60, 220) 30%);
-    width: 600px;
+    width: 50%;
     height: 300px;
     top: 50%;
     left: 50%;
@@ -42,6 +42,7 @@ body{
     border-radius: 30px;
 
 }
+
 .modal_cerrar{
     background: white;
     position: absolute;
@@ -65,16 +66,18 @@ body{
 }
 #modal-form input{
     width: 25%;
+    padding-left: 11%;
     height: 2.5rem;
     border-radius: 2rem;
    background-color: rgb(199, 231, 255);
 }
 .modal_titulo{
     color: white;
-    font-size: 40px;
+    font-size: 1.5rem;
 }
 .modal_mensaje{          
-   padding: 10px 30px;
+   padding: 20px 30px;
+   background-color: white;
 }
 .modal_botones{      
     width: 100%;    
@@ -127,8 +130,30 @@ h1{
 }
 #botones input{
     margin: 0.5rem;
+    border: none;
     cursor: pointer;
+    border-radius: 1.5rem;
    width: 100px;
    height: 50px;
    font-size: 2rem;
+}
+#botones input:hover{
+    background-color: rgb(74, 116, 255);
+    color: white;
+}
+
+@media only screen and (max-width: 600px)  {
+    .modal{
+        width: 80%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    #modal-form input{
+        width: 50%;
+        padding-left: 20%;
+        height: 2.5rem;
+        border-radius: 2rem;
+       background-color: rgb(199, 231, 255);
+    }
 }

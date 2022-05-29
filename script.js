@@ -1,5 +1,11 @@
 
+var limite;
 var contador = 0;
+
+function limiteObtenido(){
+    limite = document.getElementById("limite").value;
+    document.getElementsByClassName("fondo_transparente")[0].style.display="none";
+}
 
 function sumando() {
     if (contador <= limite){
