@@ -1,4 +1,4 @@
-var limite = prompt("Ingresa el limite: ");
+
 var contador = 0;
 
 function sumando() {
