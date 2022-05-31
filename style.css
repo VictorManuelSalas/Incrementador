@@ -118,6 +118,7 @@ section {
     color: rgb(20, 27, 220);
     text-decoration: none;
     border-radius: 25px;
+    cursor: pointer;
     border: 1px solid rgb(30, 20, 220)
 }
 
